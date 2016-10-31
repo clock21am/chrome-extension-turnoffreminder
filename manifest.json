@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Turn-off"
+	"version": 2.1
+	"minimun_chrome_version": "23"
+	"icons": {
+    	"16":"icon_16.png"
+    	"128":"icon_128.png"
+    },
+	"app": {
+		"background": {
+			"scripts":["main.js"]
+		}
+	}
+}
