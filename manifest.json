@@ -1,15 +1,16 @@
 {
-	"manifest_version": 2,
-	"name": "Turn-off"
-	"version": 2.1
-	"minimun_chrome_version": "23"
-	"icons": {
-    	"16":"icon_16.png"
-    	"128":"icon_128.png"
-    },
-	"app": {
-		"background": {
-			"scripts":["main.js"]
-		}
-	}
+  "manifest_version": 2,
+  "name": "Turn-off",
+  "version": "0.1",
+  "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+  },
+  "app":{
+      "background": {
+         "scripts":["myscirpt.js"]
+      }
+  }
+ 
 }
