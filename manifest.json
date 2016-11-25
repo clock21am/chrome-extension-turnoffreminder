@@ -2,15 +2,37 @@
   "manifest_version": 2,
   "name": "Turn-off",
   "version": "0.1",
-  "icons": {
-      "16": "icon.png",
-      "48": "icon.png",
-      "128": "icon.png"
+  "description": "The extension will control your addiction with of whatsapp-web, facebook and quora",
+  "browser_action": {
+      "default_icon": "rabbit.png",
+      "default_popup": "popup.html"
   },
-  "app":{
-      "background": {
-         "scripts":["myscirpt.js"]
-      }
-  }
- 
+  "icons": {
+    "64": "rabbit.png"
+    
+  },
+  "content_scripts": [ 
+    {   
+        "matches": ["*://www.facebook.com/*"],
+        "js": ["facebook.js","script.js"]
+    },
+    {   
+        "matches": ["*://www.quora.com/*"],
+        "js": ["Quora.js","script.js"]
+    },
+    {   
+        "matches": ["*://web.whatsapp.com/*"],
+        "js": ["whatsappweb.js","script.js"]
+    }
+  ],
+  "permissions": [
+     "tabs",
+     "activeTab",
+     "alarms",
+     "contentSettings",
+     "*://www.quora.com/*",
+     "*://www.facebook.com/*",
+     "*://web.whatsapp.com/*"
+  ],
+  "_comment": "u have become my addiction Mr.Rabbit"
 }
