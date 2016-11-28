@@ -1,3 +1,6 @@
+chrome.runtime.onMessage.addListener(function(R,S,A) {
+	alert(R);
+});
 /*window.setTimeout(myfunction,1000);
 function myfunction() {
   www.facebook.com
@@ -13,7 +16,7 @@ function myfunction() {
 
   	  } 		
   });
-  /*if(facebook.test("www.facebook.com")) {
+  if(facebook.test("www.facebook.com")) {
       chrome.runtime.sendMessage("Your 10 minutes are over close, u need to lognout now");
 
   }else if(Quora.test("/www.quora.com/")) {
@@ -22,5 +25,5 @@ function myfunction() {
   }else {
   	   chrome.runtime.sendMessage("Your 10 minutes are over close, u need to lognout now");
 
-  }*/
+  }
 }*/
