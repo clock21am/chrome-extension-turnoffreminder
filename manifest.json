@@ -1,6 +1,6 @@
 {
   "name": "Turn-off",
-  "description": "The extension will control your addiction with of whatsapp-web, facebook and quora",
+  "description": "The extension will control your addiction with  facebook and Twitter",
   "manifest_version": 2,
   "version": "0.1",
   "browser_action": {
@@ -9,7 +9,6 @@
   },
   "icons": {
     "64": "rabbit.png"
-    
   },
   "content_scripts": [ 
     {   "run_at": "document_end",
@@ -17,12 +16,8 @@
         "js": ["facebook.js"]
     },
     {   "run_at": "document_end",
-        "matches": ["*://www.quora.com/*"],
-        "js": ["Quora.js"]
-    },
-    {   "run_at": "document_end",
-        "matches": ["*://web.whatsapp.com/*"],
-        "js": ["whatsappweb.js"]
+        "matches": ["*://twitter.com/*"],
+        "js": ["Twitter.js"]
     }
   ],
   "permissions": [
@@ -30,9 +25,8 @@
      "activeTab",
      "alarms",
      "contentSettings",
-     "*://www.quora.com/*",
-     "*://www.facebook.com/*",
-     "*://web.whatsapp.com/*"
+     "*://twitter.com/*",
+     "*://www.facebook.com/*"
   ]
   
 }
