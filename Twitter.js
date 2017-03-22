@@ -1,5 +1,8 @@
-window.setTimeout(TwitterLogout,1000000);
-
+$(window).mouseleave(function(event) {
+  if (event.toElement == null) {
+		window.setTimeout(TwitterLogout,5000);    
+  }
+})
 function TwitterLogout() {
 	var toggledownbutton = document.getElementById("user-dropdown-toggle");
 	if(toggledownbutton==null){
