@@ -21,7 +21,10 @@ document.onkeydown = function() {
 clearInterval(timer);
 timer = window.setInterval(logout, 6000);
 };
-
+document.onscroll = function() {
+clearInterval(timer);
+timer = window.setInterval(logout, 6000);
+};
 
 window.onfocus = function () { 
 clearInterval(timer);
