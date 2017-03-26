@@ -1,15 +1,35 @@
 
-var isActive;
+var timer;
+window.onblur = function () { 
+ 
+clearInterval(timer);
+   timer = window.setInterval(TwitterLogout, 6000);
+
+}; 
+
+document.onclick= function() {
+clearInterval(timer);
+timer = window.setInterval(TwitterLogout, 6000);
+};
+
+document.onmousemove = function() {
+clearInterval(timer);
+timer = window.setInterval(TwitterLogout, 6000);
+};
+
+
+document.onkeydown = function() {
+clearInterval(timer);
+timer = window.setInterval(TwitterLogout, 6000);
+};
+
 
 window.onfocus = function () { 
-  isActive = true; 
-}; 
+clearInterval(timer);
+timer = window.setInterval(TwitterLogout, 6000);
+};
 
-window.onblur = function () { 
-  isActive = true; 
-  var timer = window.setInterval(TwitterLogout, 6000);
 
-}; 
 
 function TwitterLogout() {
 	var toggledownbutton = document.getElementById("user-dropdown-toggle");
