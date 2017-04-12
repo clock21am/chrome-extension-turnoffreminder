@@ -18,15 +18,28 @@
     {   "run_at": "document_end",
         "matches": ["*://twitter.com/*"],
         "js": ["Twitter.js"]
+    },
+    {   "run_at": "document_end",
+        "matches": ["*://www.quora.com/*"],
+        "js": ["Quora.js"]
+    },
+    {   "run_at": "document_end",
+        "matches": ["*://www.linkedin.com/feed/*"],
+        "js": ["Linkedin.js"]
     }
   ],
   "permissions": [
      "tabs",
      "activeTab",
      "alarms",
+     "idle",
      "contentSettings",
      "*://twitter.com/*",
-     "*://www.facebook.com/*"
+     "*://www.facebook.com/*",
+     "*://www.quora.com/",
+     "*://www.linkedin.com/feed/*",
+     
+
   ]
   
 }
