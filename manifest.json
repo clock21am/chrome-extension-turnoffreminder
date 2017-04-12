@@ -22,6 +22,10 @@
     {   "run_at": "document_end",
         "matches": ["*://www.quora.com/*"],
         "js": ["Quora.js"]
+    },
+    {   "run_at": "document_end",
+        "matches": ["*://www.linkedin.com/feed/*"],
+        "js": ["Linkedin.js"]
     }
   ],
   "permissions": [
@@ -32,7 +36,9 @@
      "contentSettings",
      "*://twitter.com/*",
      "*://www.facebook.com/*",
-     "*://www.quora.com/"
+     "*://www.quora.com/",
+     "*://www.linkedin.com/feed/*",
+     
 
   ]
   
